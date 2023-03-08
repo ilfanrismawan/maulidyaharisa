@@ -51,7 +51,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="mr-52 flex flex-row justify-center gap-3 pb-36 pt-14">
+      <div className="mr-52 flex flex-row justify-center gap-3 pb-36 pt-7 max-xl:pt-20">
         <p className="mr-4">Klik Untuk Mengetahui Lebih Lanjut Tentang Saya</p>
         <Link
           to="tentang"
