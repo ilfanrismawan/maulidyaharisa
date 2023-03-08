@@ -13,13 +13,20 @@ const poppins = Poppins({
 });
 const HeroSection = () => {
   return (
-    <section id="home" className="h-full w-full py-24">
+    <section id="home" className="h-full w-full py-2 sm:py-24">
       <div className="flex w-full flex-row pt-10">
-        <div className="flex w-full flex-col items-start justify-center pl-32">
+        <div className="flex w-full flex-col items-center justify-center text-center sm:items-start sm:pl-32 sm:text-start">
           <div>
+            <Image
+              src="/about.png"
+              alt="Maulidya Harisa"
+              width={250}
+              height={250}
+              className="flex sm:hidden"
+            />
             <p className="text-xl">Halo! saya</p>
           </div>
-          <div>
+          <div className="">
             <h1 className={`${poppins.className} text-7xl font-black`}>
               MAULIDYA HARISA
             </h1>
@@ -42,7 +49,7 @@ const HeroSection = () => {
             </Link>
           </div>
         </div>
-        <div className="flex w-2/3 flex-col items-center justify-center pr-28">
+        <div className="hidden w-2/3 flex-col items-center justify-center pr-28 sm:flex">
           <Image
             src="/about.png"
             alt="Maulidya Harisa"
@@ -51,7 +58,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="mr-52 flex flex-row justify-center gap-3 pb-36 pt-7 max-xl:pt-20">
+      <div className="flex flex-row justify-center gap-3 py-32 max-xl:pt-20 sm:mr-52 sm:py-0 sm:pt-7 sm:pb-36 sm:pl-0">
         <p className="mr-4">Klik Untuk Mengetahui Lebih Lanjut Tentang Saya</p>
         <Link
           to="tentang"

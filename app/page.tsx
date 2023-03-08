@@ -3,18 +3,22 @@ import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
+import AchievementSection from "./components/AchievementSection";
+import WorkExperienceSection from "./components/WorkExperienceSection";
+import SkillsSection from "./components/SkillsSection";
+import EducationSection from "./components/EducationSection";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <AboutSection />
-      <div>Maulidya Harisa</div>
-      <p>Achievement</p>
-      <p>work experience</p>
-      <p>education</p>
-      <p>skills</p>
-      <p id="kontak">contact</p>
+      <AchievementSection />
+      <SkillsSection />
+      <WorkExperienceSection />
+      <EducationSection />
+      <ContactSection />
     </main>
   );
 }
