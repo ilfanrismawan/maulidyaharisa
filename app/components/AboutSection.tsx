@@ -12,10 +12,10 @@ const poppins = Poppins({
 const AboutSection = () => {
   return (
     <section id="tentang">
-      <div className="flex flex-col">
+      <div className="flex flex-col ">
         <h1 className="text-center text-3xl font-black">Tentang Saya</h1>
-        <div className="m-5 flex flex-row p-5">
-          <div className="w-[50%] items-center justify-center">
+        <div className="items-center justify-center sm:m-5 sm:flex sm:flex-row sm:p-5">
+          <div className="w-full items-center justify-center sm:w-[50%]">
             <Image
               alt="Maulidya Harisa"
               src="/hero.png"
@@ -23,7 +23,7 @@ const AboutSection = () => {
               height={500}
             />
           </div>
-          <div className="w-[50%]">
+          <div className="items-center justify-center text-center sm:w-[50%] sm:items-start sm:justify-start">
             <p className="">
               Halo, nama saya{" "}
               <span className="underline"> Maulidya Harisa</span>, saya adalah

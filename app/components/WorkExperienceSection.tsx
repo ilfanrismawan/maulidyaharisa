@@ -14,7 +14,7 @@ const WorkExperienceSection = () => {
   useEffect(() => {
     axios
       .get<{ data: MediaData[] }>(
-        "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJYYWNKWjhlZAG5IaXhDRlBfc0ljdlVxQUFyWWpGeE9WQ29vLVFzWXFua25PT19fVGNmdmlKdEVZANUVmNWhkS3k0bXliZAXFOS3d6VVZAjQjE2cEVyZAjF6ZAkkzUUlvTGpuei1hRjFxY2tPNHdlbm9QMAZDZD"
+        "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJWcVd3NGdKaEdRMnVVdzB1ZAVdjelpvdVBmRV9WcnF6ekhQTFZALQjgtRHJielYxbkdjMFZAqaDRjRFcxajhmclRNTURUNWZAYNWxoc19JUUJwdVpaQ2RGUDk5S1F3QlRvbTNpZAVNtV0tGZAFhkTkFETwZDZD"
       )
       .then((response) => {
         setMediaData(response.data.data);
@@ -24,22 +24,23 @@ const WorkExperienceSection = () => {
       });
   }, []);
 
+  console.log(mediaData);
   return (
     <div className="flex flex-row ">
       {mediaData.map((media) => (
         <div
-          className="grid w-[30%] grid-rows-3 items-center justify-center px-10 "
+          className="grid grid-rows-2 items-center justify-center px-10 md:w-[30%] md:grid-rows-3"
           key={media.id}
         >
-          <div className="items-center justify-center">
+          <div className="">
             <img
-              className="m-6 w-full rounded-lg object-contain hover:brightness-90 active:brightness-75"
+              className=" w-full rounded-lg object-contain hover:brightness-90 active:brightness-75"
               src={media.media_url}
               alt={media.caption}
             />
-            <div className="w-2/3">
-              <p>{media.caption}</p>
-            </div>
+          </div>
+          <div>
+            <p className="">{media.caption}</p>
           </div>
         </div>
       ))}

@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className="bg-[#FFF5E4] text-[#FF9494]">
         <NavBar />
         {children}
-        {/* <Scriptsi /> */}
       </body>
     </html>
   );

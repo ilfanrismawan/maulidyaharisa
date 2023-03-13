@@ -54,7 +54,7 @@ const NavBar = () => {
       </div>
       <div className="block pr-3 sm:hidden">
         <Menu as="div" className="backdrop-blur-lg">
-          <div>
+          <div className="pr-8">
             <Menu.Button className="gray fill-gray-800">
               {/* Menu Icon */}
               <IoMdMenu
