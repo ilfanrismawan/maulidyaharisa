@@ -14,7 +14,7 @@ const WorkExperienceSection = () => {
   useEffect(() => {
     axios
       .get<{ data: MediaData[] }>(
-        "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJWcVd3NGdKaEdRMnVVdzB1ZAVdjelpvdVBmRV9WcnF6ekhQTFZALQjgtRHJielYxbkdjMFZAqaDRjRFcxajhmclRNTURUNWZAYNWxoc19JUUJwdVpaQ2RGUDk5S1F3QlRvbTNpZAVNtV0tGZAFhkTkFETwZDZD"
+        "https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJYeDVuVHRNN3JlSnMtYllwVmFOa3FqaG00dDN1eWRRZA0FFeEdUdFRGRzFyZAFBreG9fSHhDSlJEMm1vc3lSLUZAGQ2V5WUg4T0hUbS1LaEYzc2ZAXM0YySTdBdTZA0ZATlEQWJqNDNR"
       )
       .then((response) => {
         setMediaData(response.data.data);
