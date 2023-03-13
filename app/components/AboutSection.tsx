@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import Image from "next/image";
 import React from "react";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 
 const poppins = Poppins({
   weight: "400",
@@ -13,7 +14,10 @@ const AboutSection = () => {
   return (
     <section id="tentang">
       <div className="flex flex-col ">
-        <h1 className="text-center text-3xl font-black">Tentang Saya</h1>
+        <h1 className="flex flex-row items-center justify-center gap-3 text-center text-3xl font-black">
+          Tentang Saya
+          <AiOutlineInfoCircle />
+        </h1>
         <div className="items-center justify-center sm:m-5 sm:flex sm:flex-row sm:p-5">
           <div className="w-full items-center justify-center sm:w-[50%]">
             <Image

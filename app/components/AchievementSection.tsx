@@ -1,5 +1,6 @@
 import React from "react";
 import { BsAward, BsTrophy } from "react-icons/bs";
+import SkillsSection from "./SkillsSection";
 
 const data = [
   "Memiliki brand fashion yang terkenal.",
@@ -17,7 +18,7 @@ const mappedData = data.map((item, index) => {
   return (
     <li
       key={index}
-      className="flex flex-row items-center justify-center gap-3 "
+      className="flex flex-row items-center justify-start gap-3 px-10"
     >
       <BsAward /> {item}
     </li>
@@ -26,8 +27,8 @@ const mappedData = data.map((item, index) => {
 
 const AchievementSection = () => {
   return (
-    <section className="py-5">
-      <h1 className="flex flex-row items-center justify-center gap-2 text-center text-3xl font-black">
+    <section className="w-[50%] items-end justify-end py-5">
+      <h1 className="flex flex-row items-center justify-center gap-3 py-5 text-3xl font-black">
         Achievement
         <BsTrophy />
       </h1>

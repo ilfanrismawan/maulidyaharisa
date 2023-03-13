@@ -9,14 +9,14 @@ import WorkExperienceSection from "./components/WorkExperienceSection";
 import SkillsSection from "./components/SkillsSection";
 import EducationSection from "./components/EducationSection";
 import ContactSection from "./components/ContactSection";
+import SkillsetsSection from "./components/SkillsetsSection";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <AboutSection />
-      <AchievementSection />
-      <SkillsSection />
+      <SkillsetsSection />
       <WorkExperienceSection />
       <EducationSection />
       <ContactSection />
