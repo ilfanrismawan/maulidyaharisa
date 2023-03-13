@@ -1,28 +1,26 @@
 import React from "react";
 
 import {
-  AiOutlineGithub,
   AiOutlineTwitter,
   AiOutlineLinkedin,
   AiOutlineYoutube,
   AiOutlineWhatsApp,
   AiOutlineCopyright,
+  AiOutlineInstagram,
 } from "react-icons/ai";
+import InputForm from "./InputForm";
 
 const ContactSection = () => {
   const date = new Date().getFullYear();
   return (
     <section id="kontak">
+      <InputForm />
       <div className="flex w-full flex-row items-center justify-center ">
-        <AiOutlineGithub
+        <AiOutlineInstagram
           size={50}
           className="hover:brightness-90 active:brightness-75"
         />
         <AiOutlineTwitter
-          size={50}
-          className="hover:brightness-90 active:brightness-75"
-        />
-        <AiOutlineLinkedin
           size={50}
           className="hover:brightness-90 active:brightness-75"
         />
@@ -31,6 +29,10 @@ const ContactSection = () => {
           className="hover:brightness-90 active:brightness-75"
         />
         <AiOutlineWhatsApp
+          size={50}
+          className="hover:brightness-90 active:brightness-75"
+        />
+        <AiOutlineLinkedin
           size={50}
           className="hover:brightness-90 active:brightness-75"
         />

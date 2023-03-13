@@ -28,7 +28,7 @@ const mappedData = data.map((item, index) => {
 
 const SkillsSection = () => {
   return (
-    <section className="w-[50%] py-5">
+    <section className=" py-5">
       <h1 className="flex flex-row items-center justify-center gap-3 py-5 text-3xl font-black">
         <SlGraduation />
         SkillSet

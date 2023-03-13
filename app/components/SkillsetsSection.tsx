@@ -4,7 +4,7 @@ import SkillsSection from "./SkillsSection";
 
 const SkillsetsSection = () => {
   return (
-    <section className="flex flex-row">
+    <section className="grid grid-cols-1 sm:grid-cols-2">
       <AchievementSection />
       <SkillsSection />
     </section>

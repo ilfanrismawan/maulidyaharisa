@@ -27,7 +27,7 @@ const mappedData = data.map((item, index) => {
 
 const AchievementSection = () => {
   return (
-    <section className="w-[50%] items-end justify-end py-5">
+    <section className="items-end justify-end py-5">
       <h1 className="flex flex-row items-center justify-center gap-3 py-5 text-3xl font-black">
         Achievement
         <BsTrophy />
