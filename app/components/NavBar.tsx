@@ -37,7 +37,7 @@ const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="fixed flex w-full flex-row items-center justify-between py-3 px-5 backdrop-blur-lg sm:px-9 sm:py-6">
+    <nav className="sticky top-0 flex w-full flex-row items-center justify-between py-3 px-5 backdrop-blur-lg sm:px-9 sm:py-6">
       <div
         className={`pl-2 font-bold sm:pl-12 ${satisfy.className} cursor-pointer items-center justify-center text-lg`}
       >

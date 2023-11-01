@@ -28,8 +28,8 @@ const mappedData = data.map((item, index) => {
 
 const SkillsSection = () => {
   return (
-    <section className=" py-5">
-      <h1 className="flex flex-row items-center justify-center gap-3 py-5 text-3xl font-black">
+    <section className="py-5 ">
+      <h1 className="flex flex-row items-center justify-center gap-3 py-5 text-3xl font-black ">
         <SlGraduation />
         SkillSet
       </h1>

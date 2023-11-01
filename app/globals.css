@@ -5,3 +5,76 @@
 body {
   @apply !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-[#FF9494] !scrollbar-thumb-rounded-full;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  /* @apply bg-zinc-950; */
+}
+
+caption {
+  @apply border border-solid border-zinc-400  text-lg;
+}
+th,
+td {
+  padding: 10px;
+  text-align: start;
+  @apply border border-solid border-zinc-400;
+}
+
+th {
+  @apply bg-zinc-900 text-zinc-200;
+}
+
+.table-striped tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.article h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  /* line-height: 1.2; */
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.article h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  /* line-height: 1.2; */
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* .article h3 {
+  font-size: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+} */
+
+.article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.article a {
+  text-decoration: none;
+  @apply text-rose-600;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+.article ul {
+  list-style-type: disc; /* Jenis bullet: bulatan */
+  margin: 0 0 20px; /* Margin bawah 20px */
+  padding: 0 0 0 40px; /* Padding kiri 40px */
+}
+
+.article li {
+  margin: 5px 0; /* Margin atas dan bawah 5px */
+}

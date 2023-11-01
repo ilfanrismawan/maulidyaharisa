@@ -27,7 +27,7 @@ const InputForm = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="focus:shadow-outline w-full appearance-none rounded border-none  bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-xl brightness-95 focus:outline-none"
+            className="focus:shadow-outline hadow-inner w-full appearance-none rounded  border-none bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-inner shadow-[#FF9494] brightness-95 focus:outline-none"
           />
         </div>
         <div className="mb-4">
@@ -42,7 +42,7 @@ const InputForm = () => {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="focus:shadow-outline w-full appearance-none rounded border-none  bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-xl brightness-95  focus:outline-none"
+            className="focus:shadow-outline w-full appearance-none rounded border-none  bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-inner shadow-[#FF9494] brightness-95  focus:outline-none"
           />
         </div>
         <div className="mb-4">
@@ -56,7 +56,7 @@ const InputForm = () => {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="focus:shadow-outline w-full appearance-none rounded border-none  bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-xl brightness-95  focus:outline-none"
+            className="focus:shadow-outline hadow-inner w-full appearance-none rounded  border-none bg-[#FFF5E4]/75 py-2 px-3 leading-tight text-[#FF9494]/90 shadow-inner shadow-[#FF9494] brightness-95 focus:outline-none"
           />
         </div>
         <button
