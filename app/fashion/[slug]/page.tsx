@@ -11,9 +11,8 @@ export const generateMetadata = async ({
 }) => {
   const defaultTitle = "Fashion Designer";
   const getPage = await postById(params.slug);
-  const getIdeas = await getPage.ideas;
-  const getTitle = await getIdeas?.title;
-  const getDeskrip = await getIdeas?.content;
+  const getTitle = await getPage?.title;
+  const getDeskrip = await getPage?.content;
   const title = getTitle == null ? defaultTitle : getTitle;
   const deskrip = getDeskrip?.replace(/<[^>]*>/g, "").slice(0, 160);
 
