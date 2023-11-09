@@ -45,7 +45,7 @@ const Slug = async ({ params }: { params: { slug: string } }) => {
         </div>
         <div className="flex items-center justify-center">
           <Link
-            href={`https://wa.me/6287763334006`}
+            href={`https://wa.me/6287763334006?text=Teh maul, saya mau jahit. https://maulidyaharisa.vercel.app/fashion/${slug}`}
             target="_blank"
             className="flex flex-row items-center justify-center gap-1 rounded-full bg-green-500 px-5 py-3 text-white hover:bg-green-400 active:bg-green-700"
           >
